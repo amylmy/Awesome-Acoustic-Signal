@@ -113,3 +113,45 @@ series = {CHI '19}
   ISSN={},
   month={May},}
 ```
+
+## Multimedia
+- (SIGGRAPH'22) GWA: A Large High-Quality Acoustic Dataset for Audio Processing | [paper](https://doi.org/10.1145/3528233.3530731) | [code](https://github.com/GAMMA-UMD/GWA) | [project](https://gamma.umd.edu/pro/sound/gwa)
+```
+@inproceedings{tang2022gwa,
+author = {Tang, Zhenyu and Aralikatti, Rohith and Ratnarajah, Anton Jeran and Manocha, Dinesh},s
+title = {GWA: A Large High-Quality Acoustic Dataset for Audio Processing},
+year = {2022},
+isbn = {9781450393379},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3528233.3530731},
+doi = {10.1145/3528233.3530731},
+abstract = {We present the Geometric-Wave Acoustic (GWA) dataset, a large-scale audio dataset of about 2 million synthetic room impulse responses (IRs) and their corresponding detailed geometric and simulation configurations. Our dataset samples acoustic environments from over 6.8K high-quality diverse and professionally designed houses represented as semantically labeled 3D meshes. We also present a novel real-world acoustic materials assignment scheme based on semantic matching that uses a sentence transformer model. We compute high-quality impulse responses corresponding to accurate low-frequency and high-frequency wave effects by automatically calibrating geometric acoustic ray-tracing with a finite-difference time-domain wave solver. We demonstrate the higher accuracy of our IRs by comparing with recorded IRs from complex real-world environments. Moreover, we highlight the benefits of GWA on audio deep learning tasks such as automated speech recognition, speech enhancement, and speech separation. This dataset is the first data with accurate wave acoustic simulations in complex scenes. Codes and data are available at https://gamma.umd.edu/pro/sound/gwa.},
+booktitle = {ACM SIGGRAPH 2022 Conference Proceedings},
+articleno = {36},
+numpages = {9},
+keywords = {audio dataset, geometric sound propagation, Acoustic simulation},
+location = {Vancouver, BC, Canada},
+series = {SIGGRAPH '22}
+}
+```
+- (MM'22) MESH2IR: Neural Acoustic Impulse Response Generator for Complex 3D Scenes | [paper](https://doi.org/10.1145/3503161.3548253)
+```
+@inproceedings{10.1145/3503161.3548253,
+author = {Ratnarajah, Anton and Tang, Zhenyu and Aralikatti, Rohith and Manocha, Dinesh},
+title = {MESH2IR: Neural Acoustic Impulse Response Generator for Complex 3D Scenes},
+year = {2022},
+isbn = {9781450392037},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3503161.3548253},
+doi = {10.1145/3503161.3548253},
+abstract = {We propose a mesh-based neural network (MESH2IR) to generate acoustic impulse responses (IRs) for indoor 3D scenes represented using a mesh. The IRs are used to create a high-quality sound experience in interactive applications and audio processing. Our method can handle input triangular meshes with arbitrary topologies (2K - 3M triangles). We present a novel training technique to train MESH2IR using energy decay relief and highlight its benefits. We also show that training MESH2IR on IRs preprocessed using our proposed technique significantly improves the accuracy of IR generation. We reduce the non-linearity in the mesh space by transforming 3D scene meshes to latent space using a graph convolution network. Our MESH2IR is more than 200 times faster than a geometric acoustic algorithm on a CPU and can generate more than 10,000 IRs per second on an NVIDIA GeForce RTX 2080 Ti GPU for a given furnished indoor 3D scene. The acoustic metrics are used to characterize the acoustic environment. We show that the acoustic metrics of the IRs predicted from our MESH2IR match the ground truth with less than 10% error. We also highlight the benefits of MESH2IR on audio and speech processing applications such as speech dereverberation and speech separation. To the best of our knowledge, ours is the first neural-network-based approach to predict IRs from a given 3D scene mesh in real-time.},
+booktitle = {Proceedings of the 30th ACM International Conference on Multimedia},
+pages = {924–933},
+numpages = {10},
+keywords = {room acoustics, sound propagation, speech simulation, cross-modal},
+location = {Lisboa, Portugal},
+series = {MM '22}
+}
+```
