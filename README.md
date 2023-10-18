@@ -76,6 +76,27 @@ series = {MobiCom '16}
   ISSN={2641-9874},
   month={May},}
 ```
+- (IMWUT'20) Endophasia: Utilizing Acoustic-Based Imaging for Issuing Contact-Free Silent Speech Commands | [paper](https://dl.acm.org/doi/abs/10.1145/3381008)
+```
+@article{zhang2020endophasia,
+author = {Zhang, Yongzhao and Huang, Wei-Hsiang and Yang, Chih-Yun and Wang, Wen-Ping and Chen, Yi-Chao and You, Chuang-Wen and Huang, Da-Yuan and Xue, Guangtao and Yu, Jiadi},
+title = {Endophasia: Utilizing Acoustic-Based Imaging for Issuing Contact-Free Silent Speech Commands},
+year = {2020},
+issue_date = {March 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {4},
+number = {1},
+url = {https://doi.org/10.1145/3381008},
+doi = {10.1145/3381008},
+abstract = {Using silent speech to issue commands has received growing attention, as users can utilize existing command sets from voice-based interfaces without attracting other people's attention. Such interaction maintains privacy and social acceptance from others. However, current solutions for recognizing silent speech mainly rely on camera-based data or attaching sensors to the throat. Camera-based solutions require 5.82 times larger power consumption or have potential privacy issues; attaching sensors to the throat is not practical for commercial-off-the-shell (COTS) devices because additional sensors are required. In this paper, we propose a sensing technique that only needs a microphone and a speaker on COTS devices, which not only consumes little power but also has fewer privacy concerns. By deconstructing the received acoustic signals, a 2D motion profile can be generated. We propose a classifier based on convolutional neural networks (CNN) to identify the corresponding silent command from the 2D motion profiles. The proposed classifier can adapt to users and is robust when tested by environmental factors. Our evaluation shows that the system achieves 92.5\% accuracy in classifying 20 commands.},
+journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+month = {mar},
+articleno = {37},
+numpages = {26},
+keywords = {silent command, acoustic-based imaging, mobile devices}
+}
+```
 - (CHI'19) MilliSonic: Pushing the Limits of Acoustic Motion Tracking | [paper](https://doi.org/10.1145/3290605.3300248)
 ```
 @inproceedings{wang2019millisonic,
@@ -97,6 +118,26 @@ series = {CHI '19}
 }
 ```
 ### Localization
+- (SIGCOMM'23) Underwater 3D Positioning on Smart Devices | [paper](https://dl.acm.org/doi/10.1145/3603269.3604851) | [code](https://github.com/uw-x/underwatergps) | [project](https://underwatergps.cs.washington.edu/)
+```
+@inproceedings{chen2023underwater,
+author = {Chen, Tuochao and Chan, Justin and Gollakota, Shyamnath},
+title = {Underwater 3D Positioning on Smart Devices},
+year = {2023},
+isbn = {9798400702365},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3603269.3604851},
+doi = {10.1145/3603269.3604851},
+abstract = {The emergence of water-proof mobile and wearable devices (e.g., Garmin Descent and Apple Watch Ultra) designed for underwater activities like professional scuba diving, opens up opportunities for underwater networking and localization capabilities on these devices. Here, we present the first underwater acoustic positioning system for smart devices. Unlike conventional systems that use floating buoys as anchors at known locations, we design a system where a dive leader can compute the relative positions of all other divers, without any external infrastructure. Our intuition is that in a well-connected network of devices, if we compute the pairwise distances, we can determine the shape of the network topology. By incorporating orientation information about a single diver who is in the visual range of the leader device, we can then estimate the positions of all the remaining divers, even if they are not within sight. We address various practical problems including detecting erroneous distance estimates, addressing rotational and flipping ambiguities as well as designing a distributed timestamp protocol that scales linearly with the number of devices. Our evaluations show that our distributed system running on underwater deployments of 4--5 commodity smart devices can perform pairwise ranging and localization with median errors of 0.5--0.9 m and 0.9--1.6 m. Project page with code: https://underwatergps.cs.washington.edu/},
+booktitle = {Proceedings of the ACM SIGCOMM 2023 Conference},
+pages = {33–48},
+numpages = {16},
+keywords = {ocean sciences, smart watches, underwater GPS, anchor-free, acoustic tracking, distributed localization},
+location = {New York, NY, USA},
+series = {ACM SIGCOMM '23}
+}
+```
 - (ICRA'22) Towards Accurate Positioning of Underwater Vehicles Using Low-cost Acoustic Modems | [paper](https://doi.org/10.1109/ICRA46639.2022.9811851)
 ```
 @inproceedings{busse2022towards,
